@@ -2,7 +2,7 @@ import React from 'react'
 import { useRouter } from 'next/router'
 import cn from 'classnames'
 
-import { MENU } from '../../constants/menu'
+import { MENU } from '../../constants'
 import styles from './navigation.module.css'
 
 import NavigationButton from './button'
@@ -20,7 +20,6 @@ function Navigation({ flat = false }) {
         return (
           <NavigationButton
             key={menu.key}
-            notify={menu.notify}
             selected={selected}
             href={menu.path}
             className={cn(styles.navButton, menu.key)}

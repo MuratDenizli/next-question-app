@@ -2,17 +2,24 @@ import React from 'react'
 import cn from 'classnames'
 
 import styles from './style.module.css'
+import useWindowSize from '../../hooks/useWindowSize'
+import CONST from '../../constants'
 
-function Layout({children}) {
-    return (
-        <div className={cn(styles.layout)}>
-          <div>sidebar</div>
-    
-          <div>main</div>
-    
-          <div>extra</div>
-        </div>
-      )
+import Sidebar from '../sidebar'
+import Main from '../main'
+
+function Layout({ children }) {
+  const size = useWindowSize()
+
+  return (
+    <div className={cn(styles.layout)}>
+      <Sidebar flat={size.width < CONST.DESKTOP_SIZE}></Sidebar>
+
+      <Main>{children}</Main>
+
+      {size.width > CONST.TABLET_SIZE && <div>extra</div>}
+    </div>
+  )
 }
 
 export default Layout
