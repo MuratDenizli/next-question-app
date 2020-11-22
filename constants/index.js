@@ -12,21 +12,13 @@ export const MENU = [
     path: '/',
     icon: <Icon.Home />,
     iconSelected: <Icon.HomeFill />,
-    title: 'List of Questions Page'
+    title: 'List of Questions'
   },
-  {
-    key: 'detail',
-    path: '/detail',
-    icon: <Icon.Home />,
-    iconSelected: <Icon.HomeFill />,
-    title: 'Question Detail page'
-  },
-  ,
   {
     key: 'create',
     path: '/create',
     icon: <Icon.Home />,
     iconSelected: <Icon.HomeFill />,
-    title: 'Create a New Question page'
+    title: 'Create a New Question'
   }
 ]
