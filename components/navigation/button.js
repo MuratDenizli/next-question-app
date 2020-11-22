@@ -5,7 +5,7 @@ import Button from '../button'
 
 import styles from './button.module.css'
 
-function NavigationButton({ notify, selected, children, className, ...props }) {
+function NavigationButton({ selected, children, className, ...props }) {
   return (
     <Button
       className={cn(
