@@ -32,11 +32,27 @@
 .choices {
   display: flex;
   flex-wrap: wrap;
-  > span {
+  border-radius: 10px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  padding: 10px 20px;
+  background-color: var(--c-secondary-30);
+
+  > div {
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+
+  > div span {
     border-radius: 10px;
     margin-right: 5px;
     margin-bottom: 3px;
-    padding: 5px 10px;
-    background-color: var(--c-secondary-30);
+    padding: 10px 20px;
+    white-space: nowrap;
+    background-color: var(--c-primary);
   }
+}
+
+.votes {
+  color: red;
 }
