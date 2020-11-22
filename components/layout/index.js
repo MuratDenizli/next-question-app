@@ -16,8 +16,6 @@ function Layout({ children }) {
       <Sidebar flat={size.width < CONST.DESKTOP_SIZE}></Sidebar>
 
       <Main>{children}</Main>
-
-      {size.width > CONST.TABLET_SIZE && <div>extra</div>}
     </div>
   )
 }
