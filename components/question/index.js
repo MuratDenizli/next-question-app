@@ -6,6 +6,8 @@ import styles from './style.module.css'
 
 function Question({ ...props }) {
   const date = new Date(props.published_at)
+  console.log('props', props)
+
   return (
     <Link href={props.url}>
       <a {...props}>

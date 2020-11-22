@@ -19,7 +19,7 @@ export default function Home() {
       )}
 
       {data?.map((q) => {
-        return <Question key={q.id} {...q}></Question>
+        return <Question key={q.url} {...q}></Question>
       })}
     </Layout>
   )
