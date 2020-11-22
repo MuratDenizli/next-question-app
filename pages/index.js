@@ -1,10 +1,10 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-
-import Layout from '../components/layout' 
+import Layout from '../components/layout'
+import Question from '../components/question'
 
 export default function Home() {
   return (
-    <Layout></Layout>
+    <Layout>
+      <Question></Question>
+    </Layout>
   )
 }
