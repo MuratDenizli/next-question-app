@@ -1,8 +1,9 @@
 :root {
   --c-primary: #fff;
-  --c-theme: rgba(29, 161, 242, 1);
-  --c-theme-10: rgba(29, 161, 242, 0.1);
-  --c-border-color: rgb(230, 236, 240);
+  --c-secondary:rgba(81,201,56,1);
+  --c-theme: rgba(86,111,255,1);
+  --c-theme-10: rgba(86, 111, 255, 0.1);
+  --c-border-color: rgb(248, 248, 251);
   --c-gray: #6e767d;
   --c-dark-gray: #202327;
   --c-text-color: #000;
