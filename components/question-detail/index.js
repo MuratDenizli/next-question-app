@@ -24,12 +24,10 @@ function QuestionDetail({ ...props }) {
         <div className={styles.choices}>
           {props?.choices?.map((q) => {
             return (
-              <div key={q.url}>
-                <span>
-                  {q.choice}
-                  {q.vote && <span className={styles.votes}>{q.vote}</span>}
-                </span>
-              </div>
+              <span key={q.url}>
+                {q.choice}
+                {q.vote && <span className={styles.votes}>{q.vote}</span>}
+              </span>
             )
           })}
         </div>
