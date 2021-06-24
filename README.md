@@ -1,4 +1,4 @@
-# Yemek Sepeti
+# Question-App
 
 +## Getting Started
 First, run the development server:
@@ -11,7 +11,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### Links
 
-- [🌍 Website](https://yemek-sepeti.vercel.app/)
+- [🌍 Website](https://next-question-app.vercel.app/)
 
 - [🦄 Style Guide](storybook kullanılacak)
 
